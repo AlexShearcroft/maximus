@@ -4,3 +4,4 @@
 .env.example
 Vagrantfile
 Homestead.yaml
+/readme.md
