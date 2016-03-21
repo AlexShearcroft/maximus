@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/maximus":{"type":null,"mount_options":[],"guestpath":"/home/vagrant/maximus","hostpath":"/Users/alexshearcroft/Dropbox/Sites/maximus","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/alexshearcroft/Dropbox/Sites/maximus","disabled":false}}}
