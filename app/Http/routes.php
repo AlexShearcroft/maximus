@@ -20,7 +20,5 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 */
-Route::get('contact', 
-  ['as' => 'contact', 'uses' => 'ContactController@create']);
-Route::post('contact', 
-  ['as' => 'contact_store', 'uses' => 'ContactController@store']);
+Route::get('contact', ['as' => 'contact', 'uses' => 'ContactController@create']);
+Route::post('contact', ['as' => 'contact_store', 'uses' => 'ContactController@store']);
