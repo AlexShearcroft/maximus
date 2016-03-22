@@ -21,6 +21,6 @@ Route::controllers([
 ]);
 */
 Route::get('contact', 
-  ['as' => 'contact', 'uses' => 'AboutController@create']);
+  ['as' => 'contact', 'uses' => 'ContactController@create']);
 Route::post('contact', 
-  ['as' => 'contact_store', 'uses' => 'AboutController@store']);
+  ['as' => 'contact_store', 'uses' => 'ContactController@store']);

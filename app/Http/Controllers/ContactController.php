@@ -6,11 +6,11 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-class AboutController extends Controller {
+class ContactController extends Controller {
 
 	public function create()
     {
-        return view('about.contact');
+        return view('contact.index');
     }
 
     public function store(ContactFormRequest $request)
