@@ -1,0 +1,52 @@
+/*
+	Typography
+-------------------*/
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	margin: 0;
+}
+
+h1 {
+	font-size: calc-ems(32);
+	
+	@include bp(768) {
+		font-size: calc-ems(40);
+	}
+}
+
+h2 {
+	font-size: calc-ems(24);
+	
+	@include bp(768) {
+		font-size: calc-ems(32);
+	}
+}
+
+h3 {
+	font-size: calc-ems(21);
+	
+	@include bp(768) {
+		font-size: calc-ems(24);
+	}
+}
+
+h4, h5, h6 {
+	font-size: calc-ems(18);
+	
+	@include bp(768) {
+		font-size: calc-ems(21);
+	}
+}
+
+p {
+	font-size: calc-ems(16);
+	margin: calc-ems(16) 0 0;
+	
+	&:first-child {
+		margin: 0;
+	}
+}
+
+b {
+	font-weight: 700;
+}

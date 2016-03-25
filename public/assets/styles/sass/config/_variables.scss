@@ -1,0 +1,36 @@
+/*----------------------------------------
+
+	CONFIG = STYLES VARIABLES
+
+----------------------------------------*/
+
+// Fonts
+
+// Base
+$base-font-family: 'Lato', 'arial', 'helvetica', 'Sans-serif';
+$base-font-size: 16px;
+$line-height-ratio: 1.4;
+
+// Colours
+$white: #FFF;
+$green: #072808;
+$lt-grey: #E9E9E9;
+
+$brand-colour: $green;
+
+// Font sizes
+$large-text: 2em; // 32px
+$sub-text: 1.5em; // 24px
+$average-text: 1.25em; // 20px
+$normal-text: 1em; // 16px
+$small-text: 0.875em; // 14px
+
+// Containers
+$container-width: 64em !default; // 1024px
+$wrapper-width: 100% !default;
+
+// Navigation
+$bg-nav: $white;
+
+// Transition
+$transition: 0.3s linear;
