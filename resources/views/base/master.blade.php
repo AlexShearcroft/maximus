@@ -20,16 +20,26 @@
 		<meta name="robots" content="Index, Follow" />
 		<meta name="revisit-after" content="5" />
 		<meta name="content-language" content="en-gb" />
+		<link rel="shortcut icon" href="{{url('/assets/icons')}}/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="{{url('/assets/icons')}}/apple-touch-icon.png" />
+		<link rel="apple-touch-icon" sizes="57x57" href="{{url('/assets/icons')}}/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="{{url('/assets/icons')}}/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="{{url('/assets/icons')}}/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="{{url('/assets/icons')}}/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="{{url('/assets/icons')}}/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="{{url('/assets/icons')}}/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="{{url('/assets/icons')}}/apple-touch-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="{{url('/assets/icons')}}/apple-touch-icon-180x180.png" />
 		<meta property="og:site_name" content="@yield('company_name')" />
 		<meta property="og:url" content="{{url()}}" />
-		<meta property="og:image" content="{{url('/assets/images/')}}" />
+		<meta property="og:image" content="{{url('/assets/images')}}/" />
 		<meta property="og:locale" content="en_GB" />
 		<?php /* Validation via: https://cards-dev.twitter.com/validator */ ?>
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:title" content="Your title here" />
 		<meta name="twitter:description" content="Your 200-character description here" />
 		<meta name="twitter:url" content="{{url()}}" />
-		<meta name="twitter:image" content="{{url('/assets/images/')}}" />
+		<meta name="twitter:image" content="{{url('/assets/images')}}/" />
 		<script type="application/ld+json">
 			{
 				"@context" : "http://schema.org",
@@ -65,6 +75,7 @@
 		<style>
 			html,
 			body {
+				background: papayawhip;
 				margin: 0;
 				padding: 0;
 				width: 100%;
@@ -87,11 +98,19 @@
 			}
 
 			.title {
-				font-size: 96px;
-				margin-bottom: 40px;
+				background: url("../assets/images/logo.png") center center no-repeat;
+				display: block;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				height: 64px;
+				width: 100%;
+				/*font-size: 96px;*/
+				margin-bottom: 10px;
 			}
 
 			.quote {
+				color: #1A1A1A;
 				font-size: 24px;
 			}
 		</style>

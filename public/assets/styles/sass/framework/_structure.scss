@@ -1,0 +1,52 @@
+/* ==========================
+
+	STRUCTURE
+
+========================== */
+/*
+	Global
+---------------*/
+* {
+	@include box-sizing(border-box);
+}
+
+html,
+body {
+	height: 100%;
+}
+
+/*
+	Body
+----------------*/
+
+body {
+	font: #{($base-font-size / 16px) * 1em} / #{$line-height-ratio} $base-font-family, arial;
+	margin: 0;
+
+	-webkit-text-size-adjust: none; // stops the text from becoming bigger on orientation on iPhone / iPad devices
+	  -webkit-font-smoothing: antialiased; // makes the font smooth on webkit devices
+	
+	&.lock {
+		overflow: hidden;
+	}
+}
+
+/*
+	Wrappers / Containers
+----------------------------*/
+.wrapper {
+	letter-spacing: normal;
+	max-width: $wrapper-width;
+	overflow: hidden;
+
+	@if ($MQs) == false {
+		min-width: 1200px; // when we are doing a desktop build need to include our min-width as 60em! This is the default that devices read, any bigger then will have to scroll
+	}
+}
+
+/*
+	Imagery
+----------------*/
+img {
+	border: none;
+}
