@@ -5,3 +5,6 @@
 Vagrantfile
 Homestead.yaml
 readme.md
+/.brackets.json
+/.vagrant/
+/.sass-cache/

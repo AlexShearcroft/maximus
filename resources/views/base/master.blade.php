@@ -72,53 +72,11 @@
 			ga('create', '', 'auto');
 			ga('send', 'pageview');
 		</script>
-		<style>
-			html,
-			body {
-				background: papayawhip;
-				margin: 0;
-				padding: 0;
-				width: 100%;
-				height: 100%;
-				color: #B0BEC5;
-				display: table;
-				font-weight: 100;
-				font-family: 'Lato';
-			}
-
-			.container {
-				text-align: center;
-				display: table-cell;
-				vertical-align: middle;
-			}
-
-			.content {
-				text-align: center;
-				display: inline-block;
-			}
-
-			.title {
-				background: url("../assets/images/logo.png") center center no-repeat;
-				display: block;
-				overflow: hidden;
-				text-indent: 100%;
-				white-space: nowrap;
-				height: 64px;
-				width: 100%;
-				/*font-size: 96px;*/
-				margin-bottom: 10px;
-			}
-
-			.quote {
-				color: #1A1A1A;
-				font-size: 24px;
-			}
-		</style>
     </head>
     <body>
         <div class="container">
 			@yield('content')
 		</div>
-		<script data-main="assets/scripts/app/{{$page_script or 'main'}}" src="assets/scripts/require.min.js"></script>
+		<script data-main="{{url('/assets/scripts')}}/app/{{$page_script or 'main'}}" src="{{url('/assets/scripts')}}/require.min.js"></script>
     </body>
 </html>
